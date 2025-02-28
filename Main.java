@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-Calculator calculator = new Calculator();
+        Calculator calculator = new Calculator();
         System.out.print("숫자를 입력하세요: ");
 
         try {

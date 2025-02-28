@@ -2,7 +2,7 @@ package calculator;
 
 public class Calculator {
     //속성
-    double result;
+    private double result;
 
 //생성자
 
@@ -31,4 +31,8 @@ public class Calculator {
     public double getResult() {
         return this.result;
     }
-}
+
+    public void setResult(double result) {
+        this.result = result;
+        }
+    }

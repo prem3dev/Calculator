@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-
+Calculator calculator = new Calculator();
         System.out.print("숫자를 입력하세요: ");
 
         try {
@@ -34,24 +34,28 @@ public class Main {
 
                             switch (operator) {
                                 case '+':
-                                    numberA += numberB;
-                                    System.out.println("result : " + numberA);
+                                    double result = calculator.sum(numberA, numberB);
+                                    numberA = result;
+                                    System.out.println("result : " + result);
                                     break;
                                 case '-':
-                                    numberA -= numberB;
-                                    System.out.println("result : " + numberA);
+                                    result = calculator.sub(numberA, numberB);
+                                    numberA = result;
+                                    System.out.println("result : " + result);
                                     break;
                                 case '*':
-                                    numberA *= numberB;
-                                    System.out.println("result : " + numberA);
+                                    result = calculator.mul(numberA, numberB);
+                                    numberA = result;
+                                    System.out.println("result : " + result);
                                     break;
                                 case '/':
                                     if (numberB == 0) {
                                         System.out.println("0 이외에 다른 수를 다시 입력하세요");
                                         continue;
                                     } else {
-                                        numberA /= numberB;
-                                        System.out.println("result : " + numberA);
+                                        result = calculator.div(numberA, numberB);
+                                        numberA = result;
+                                        System.out.println("result : " + result);
                                         break;
                                     }
                             }

@@ -11,46 +11,38 @@ public class Calculator {
     public double calculate(double number1, char operator, double number2) throws ArithmeticException {
         if (results.isEmpty()) {
             if (operator == '+') {
-                double sumResult = number1 + number2;
-                results.add(sumResult);
-                return sumResult;
+                results.add(number1 + number2);
+                return number1 + number2;
             } else if (operator == '-') {
-                double subResult = number1 - number2;
-                results.add(subResult);
-                return subResult;
+                results.add(number1 + number2);
+                return number1 + number2;
             } else if (operator == '*') {
-                double mulResult = number1 * number2;
-                results.add(mulResult);
-                return mulResult;
+                results.add(number1 * number2);
+                return number1 * number2;
             } else {
                 if (number2 == 0) {
                     throw new ArithmeticException();
                 }
-                double divResult = number1 / number2;
-                results.add(divResult);
-                return divResult;
+                results.add(number1 / number2);
+                return number1 / number2;
             }
         } else {
             int lastIndex = results.size() - 1;
             if (operator == '+') {
-                double sumResult = results.get(lastIndex) + number2;
-                results.add(sumResult);
-                return sumResult;
+                results.add(results.get(lastIndex) + number2);
+                return results.get(lastIndex) + number2;
             } else if (operator == '-') {
-                double subResult = results.get(lastIndex) - number2;
-                results.add(subResult);
-                return subResult;
+                results.add(results.get(lastIndex) - number2);
+                return results.get(lastIndex) - number2;
             } else if (operator == '*') {
-                double mulResult = results.get(lastIndex) * number2;
-                results.add(mulResult);
-                return mulResult;
+                results.add(results.get(lastIndex) * number2);
+                return results.get(lastIndex) * number2;
             } else {
                 if (number2 == 0) {
                     throw new ArithmeticException();
                 }
-                double divResult = results.get(lastIndex) / number2;
-                results.add(divResult);
-                return divResult;
+                results.add(results.get(lastIndex) / number2);
+                return results.get(lastIndex) / number2;
             }
         }
     }

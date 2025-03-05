@@ -1,11 +1,11 @@
 package calculator;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Calculator {
-
-    private ArrayList<Double> results = new ArrayList<>();
+    private     List <Double> results = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
 
     public double calculate(double number1, char operator, double number2) throws ArithmeticException {

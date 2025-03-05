@@ -1,11 +1,12 @@
 package calculator;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Calculator {
     //속성
-    private ArrayList<Double> results = new ArrayList<>();
+    private     List <Double> results = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
 
 //생성자

@@ -4,13 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Calculator {
-    //속성
+
     private ArrayList<Double> results = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
-
-//생성자
-
-    //기능 더하기 빼기 곱하기 나누기 게터 세터
 
     public double calculate(double number1, char operator, double number2) throws ArithmeticException {
         if (results.isEmpty()) {

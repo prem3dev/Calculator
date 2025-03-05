@@ -41,7 +41,7 @@ public class Main {
 
                                 if (textNumberB.equals("back")) {
                                     break;
-                                }  else if (textNumberB.equals("exit")) {
+                                } else if (textNumberB.equals("exit")) {
                                     return;
                                 } else if (textNumberB.equals("조회")) {
                                     calculator.printResult();
@@ -55,7 +55,8 @@ public class Main {
                                         try {
                                             double result = calculator.calculate(numberA, operator, numberB);
                                             System.out.println(result);
-                                            ;break;
+                                            ;
+                                            break;
                                         } catch (ArithmeticException e) {
                                             System.out.println("0으로 나눌 수 없습니다.");
                                             continue;

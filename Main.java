@@ -36,7 +36,7 @@ public class Main {
                         } else if (textOperator.equals("+") || textOperator.equals("-") || textOperator.equals("*") || textOperator.equals("/")) {
                             char operator = textOperator.charAt(0);
                             while (true) {
-                                System.out.print("숫자를 입력하세요\n(\"back\" 입력 시 - 이전으로)\n(\"조회\" 입력 시 - 조회하기)\n(\"수정\" 입력 시 - 수정하기)\n(\"삭제\" 입력 시 - 삭제하기)\n(\"exit\" 입력 시 - 계산기 종료)\n입력 : ");
+                                System.out.print("숫자를 입력하세요\n(\"back\" 입력 시 - 이전 창으로)\n(\"조회\" 입력 시 - 조회하기)\n(\"수정\" 입력 시 - 수정하기)\n(\"삭제\" 입력 시 - 삭제하기)\n(\"exit\" 입력 시 - 계산기 종료)\n입력 : ");
                                 String textNumberB = scanner.next();
 
                                 if (textNumberB.equals("back")) {
